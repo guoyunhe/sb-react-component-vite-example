@@ -3,14 +3,13 @@ import { useState } from 'react';
 
 const AntdBlock = load<any>({
   script: 'https://guoyunhe.github.io/sb-react-component-vite-example/antd.js',
-  loadingFallback: () => 'loading',
-  failedFallback: (error) => error.message,
+  styles: ['https://guoyunhe.github.io/sb-react-component-vite-example/antd.css'],
+  loadingFallback: () => <span>Loading</span>,
+  failedFallback: (error) => <span>Failed to load: {error.message}</span>,
 });
 
-function App() {
+export default function App() {
   const [open, setOpen] = useState(false);
-
-  console.log(open);
 
   return (
     <div>
@@ -18,16 +17,12 @@ function App() {
       <AntdBlock
         open={open}
         onCancel={() => {
-          console.log('onCancel');
           setOpen(false);
         }}
         onOk={() => {
-          console.log('onOk');
           setOpen(false);
         }}
       />
     </div>
   );
 }
-
-export default App;
