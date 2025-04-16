@@ -38,7 +38,7 @@
     ]
   },
   "dependencies": {
-    "@shadow-bridge/react": "^0.1.0",
+    "@shadow-bridge/react": "^0.1.1",
     "antd": "^5.24.7",
     "react": "^19.1.0",
     "react-dom": "^19.1.0"

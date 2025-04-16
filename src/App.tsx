@@ -1,5 +1,11 @@
+import { load } from '@shadow-bridge/react';
 import { useState } from 'react';
-import { AntdBlock } from './antd';
+
+const AntdBlock = load<any>({
+  script: 'https://guoyunhe.github.io/sb-react-component-vite-example/antd.js',
+  loadingFallback: () => 'loading',
+  failedFallback: (error) => error.message,
+});
 
 function App() {
   const [open, setOpen] = useState(false);
