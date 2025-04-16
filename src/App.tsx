@@ -4,6 +4,7 @@ import { useState } from 'react';
 const AntdBlock = load<any>({
   script: 'https://guoyunhe.github.io/sb-react-component-vite-example/antd.js',
   styles: ['https://guoyunhe.github.io/sb-react-component-vite-example/antd.css'],
+  prefetch: true,
   loadingFallback: () => <span>Loading</span>,
   failedFallback: (error) => <span>Failed to load: {error.message}</span>,
 });
