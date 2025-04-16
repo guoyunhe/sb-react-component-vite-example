@@ -39,7 +39,7 @@
   },
   "dependencies": {
     "@ant-design/cssinjs": "^1.23.0",
-    "@shadow-bridge/react": "^0.1.5",
+    "@shadow-bridge/react": "^0.2.1",
     "antd": "^5.24.7",
     "react": "^18.0.0",
     "react-dom": "^18.0.0"
