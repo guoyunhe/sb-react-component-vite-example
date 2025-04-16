@@ -40,13 +40,13 @@
   "dependencies": {
     "@shadow-bridge/react": "^0.1.1",
     "antd": "^5.24.7",
-    "react": "^19.1.0",
-    "react-dom": "^19.1.0"
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.24.0",
-    "@types/react": "^19.1.2",
-    "@types/react-dom": "^19.1.2",
+    "@types/react": "^18.0.0",
+    "@types/react-dom": "^18.0.0",
     "@vitejs/plugin-react-swc": "^3.9.0",
     "eslint": "^9.24.0",
     "eslint-config-ali": "^16.1.1",
