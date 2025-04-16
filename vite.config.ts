@@ -8,6 +8,7 @@ export default defineConfig({
       entry: ['./src/antd.tsx'],
       // 💡 Use ESM or UMD
       formats: ['es'],
+      fileName: 'antd',
     },
   },
   define: {

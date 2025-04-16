@@ -1,6 +1,7 @@
 import { StyleProvider } from '@ant-design/cssinjs';
 import { wrap } from '@shadow-bridge/react';
 import { Button, ConfigProvider, Empty, Input, Modal } from 'antd';
+import './antd.css';
 
 export interface AntdBlockProps {
   // 💡 ShadowBridge will always pass shadowRoot prop to the component
