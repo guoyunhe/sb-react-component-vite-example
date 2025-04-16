@@ -10,10 +10,22 @@ const AntdBlock = load<any>({
 function App() {
   const [open, setOpen] = useState(false);
 
+  console.log(open);
+
   return (
     <div>
       <button onClick={() => setOpen(true)}>Open Ant Design Modal</button>
-      <AntdBlock open={open} onCancel={() => setOpen(false)} onOk={() => setOpen(false)} />
+      <AntdBlock
+        open={open}
+        onCancel={() => {
+          console.log('onCancel');
+          setOpen(false);
+        }}
+        onOk={() => {
+          console.log('onOk');
+          setOpen(false);
+        }}
+      />
     </div>
   );
 }
