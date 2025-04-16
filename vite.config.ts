@@ -12,7 +12,7 @@ export default defineConfig({
   },
   define: {
     // 💡 Fix `process is not defined` error thrown by React
-    'process.env': process.env,
+    'process.env': {},
   },
   plugins: [react()],
   server: {
